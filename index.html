@@ -7,26 +7,102 @@
 </head>
 <body>
     <header>
-        <h1>Hello, my name is Lynn!</h1>
-        <p> I am Majoring in Games and Interactive Media at <a href="https://msu.edu/">Michigan State University</a>
-        </p>
+        <img src="KaleidoIcon.png" alt="Kaleido Icon" width="50">
+        <h1>Lynn's Game Dev Blog!</h1>
     </header>
+    <nav>
+            <p>
+                <a href="/index.html"><strong>Home</strong></a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </p>
+    </nav>
+
+Create an email newsletter signup form at the bottom of your index.html page (see video lesson)
     <section>
-        <h2>Today I went to several classes:</h2>
-            <ol>
-                <li><strong>MI 235</strong> <em>Introduction to Video Game Audio</em></li>
-                <li><strong>MI 445</strong> <em>Game Design and Development 1</em></li>
-                <li><strong>MTH 133</strong> <em>Calculus 2</em></li>
-                <li><strong>MI 349</strong> <em>Intro to Web Design</em></li>
-            </ol>
+        <article>
+            <section class="BlogPost">
+                <h2>New project & update on Kaleido!</h2>
+                <h5>Published on November 3, 2025 by Lynn Hogen-Esch</h5>
+                <p> Hey folks! I've been busy working on a few new things. First, I'm starting work on a tower defense/arcade shooter game (no title yet, I'll be calling it Druid Defense for now) in which you defend a big tree against hordes of robots! As I typically am, I am the UI/UX lead for this project, and I'm using this project to figure out some better ways of having dynamic UI, to keep the player in the game better. Namely I'm working on making tower placement a radial menu rather than a hotbar, so as to have the least amount of HUD that stays constantly visible as possible.</p>
+                <p>Additionally, I've been reworking the overworld UI for Kaleido! I've figured out the layouts for the inventory screen and the new party screen. I've also reworked the structure of the overworld UI, see the table below for the comparison. You might notice if you've been following the development of the UI that we no longer have a status screen. This is because in the new layout, character stats are viewable on the party screen! The switch button lets you swap characters in and out of your active party, and if you aren't switching a character, it'll display the stats of the character you have selected. You'll also notice that the included screenshots of the overworld UI do not include the button for the map. This is because the map was added to the plan for the overworld UI after these screenshots were taken. I've actually recently decided to pivot to a different part of the UI, though I won't be able to speak much on what I'm pivoting to as it would be spoiling the opening of the game. So, if I speak on my contribution to Kaleido, it will likely either be abstracted enough that it wouldn't spoil anything, or about some other contribution. 
+                See y'all next week!
+                </p>
+            </section>
+            <aside>
+                <img src="KaleidoInventory.png" alt="Inventory screen from Kaleido" width="400">
+                <img src="KaleidoPartyManagement.png" alt="Party screen from Kaleido, in party management mode" width="400">
+                <img src="KaleidoPartyStatus.png" alt="Party screen from Kaleido, in character status mode" width="400">
+            </aside>
+            <table>
+                <tr>
+                    <th>Old UI Page</th>
+                    <th>Old Function</th>
+                    <th>New UI Page</th>
+                    <th>New Function</th>
+                </tr>
+                <tr>
+                    <td>Item Inventory</td>
+                    <td>Display inventory</td>
+                    <td>Inventory</td>
+                    <td>Display inventory</td>
+                </tr>
+                <tr>
+                    <td>Party Management</td>
+                    <td>Switch active party members</td>
+                    <td>Party</td>
+                    <td>Switch active party members and view party member status</td>
+                </tr>
+                <tr>
+                    <td>Party Status</td>
+                    <td>View party member status</td>
+                    <td>Party</td>
+                    <td>Switch active party members and view party member status</td>
+                </tr>
+                <tr>
+                    <td>Settings</td>
+                    <td>Change and save settings</td>
+                    <td>Settings</td>
+                    <td>Change and save settings</td>
+                </tr>
+                <tr>
+                    <td>Save</td>
+                    <td>Save game</td>
+                    <td>Save</td>
+                    <td>Save and/or load game save</td>
+                </tr>
+                <tr>
+                    <td>Load</td>
+                    <td>Load game save</td>
+                    <td>Save</td>
+                    <td>Save and/or load game save</td>
+                </tr>
+                <tr>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Map</td>
+                    <td>View Map of area/world map, context dependant</td>
+                </tr>
+            </table>
+        </article>
+        <article>
+            <section class="BlogPost">
+                <h2>Resuming work on Kaleido!!</h2>
+                <h5>Published on October 20, 2025 by Lynn Hogen-Esch</h5>
+                <p>I've recently begun working on Kaleido again! Kaleido is a JRPG with fighting game elements that I first began work on during the summer of 2023. Once MSU classes started up in the fall of that year, the team kinda stopped working on it. This was, in hindsight, for the best, as it allowed us to develop our skills further before resuming work on this project. I am the UI/UX team lead for Kaleido, so I've been working on the UI layouts. When we came back to pre-production of Kaleido, I decided to do a full reset on the UI as what we had was made when I was significantly less competent in my UI/UX design skills. Kaleido is a very large scope game, the team is currently working toward making just the prologue (we're aiming for 3-4 hours of gameplay) as a demo to show to publishers. Currently we are all just working on Kaleido as a side gig while we are all in college, but we eventually plan on incorporating as a full studio once we have the funding to support that. We're also planning on starting a devlog for the project, which will likely be on youtube.  While Kaleido will have its own devlogs, I'll be including my work on Kaleido in my weekly devlogs! See y'all next week!
+                </p>
+            </section>
+            <aside>
+                <img src="People_Of_Kaleido_image_edited.png" alt="Cognitive Studios' logo with several characters from Kaleido on it." width="400">
+            </aside>
+        </article>
     </section>
-    <section>
-        <h2>I've got a bunch of homework to do after class today:</h2>
-            <ul>
-                <li>Start on my soundtrack analysis essay for <strong>MI 235</strong></li>
-                <li>Work on the pause UI for my <strong>MI 445</strong> project.</li>
-                <li>Finish making keychains for Gamma Iota Mu's Lineage Initiation</li>
-            </ul>
-    </section>
+    <form name="newsletterForm"  netlify>
+        <label>
+                Sign up for our Newsletter: 
+            <input type="text" name="name" />
+        </label>
+        <button type="submit">Subscribe</button>
+    </form>
 </body>
 </html>

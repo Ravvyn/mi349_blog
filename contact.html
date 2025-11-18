@@ -6,6 +6,39 @@
     <title>Contact</title>
 </head>
 <body>
-    
+    <header>
+        <img src="KaleidoIcon.png" alt="Kaleido Icon" width="50">
+        <h1>Lynn's Game Dev Blog!</h1>
+        <nav>
+            <p>
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html"><strong>Contact</strong></a>
+            </p>
+        </nav>
+    </header>
+    <form name="ContactForm"  netlify>
+        <label>
+                Name:
+            <input type="text" name="name" />
+        </label><br>
+        <label>
+                Email Address:
+            <input type="text" name="email" />
+        </label><br>
+        <label>
+                Reason for contact
+        </label>
+        <select name="ReasonForContact" id="ReasonForContact">
+            <option value="hi">Saying Hi</option>
+            <option value="contractor">Looking for a Contractor</option>
+            <option value="interview">Interested in an Interview</option>
+        </select><br>
+        <label>
+                Message:
+            <input type="text" name="message" />
+        </label><br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
