@@ -30,6 +30,8 @@ header{
 }
 img.logo{
     float:left;
+    max-width: 10%;
+    height: auto;
 }
 h1{
     text-align:center;
@@ -118,4 +120,6 @@ section.about{
 }
 img{
     padding:1%;
+    max-width: 100%;
+    height: auto;
 }
