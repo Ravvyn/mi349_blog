@@ -3,41 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <img src="KaleidoIcon.png" alt="Kaleido Icon" width="50">
+        <img class="logo" src="KaleidoIcon.png" alt="Kaleido Icon" width=10%>
         <h1>Lynn's Dev Corner</h1>
         <nav>
-            <p>
-                <a href="/index.html">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/contact.html"><strong>Contact</strong></a>
-            </p>
+            <a class="navLink" href="/index.html">Home</a>
+            <a class="navLink" href="/about.html">About</a>
+            <a class="navLink" href="/contact.html"><strong>Contact</strong></a>
         </nav>
     </header>
     <form name="ContactForm"  method="post" data-netlify="true">
         <label>
                 Name:
             <input type="text" name="name">
-        </label><br>
+        </label>
         <label>
                 Email Address:
             <input type="text" name="email">
-        </label><br>
+        </label>
         <label>
                 Reason for contact
+            <select name="ReasonForContact" id="ReasonForContact">
+                <option value="hi">Saying Hi</option>
+                <option value="contractor">Looking for a Contractor</option>
+                <option value="interview">Interested in an Interview</option>
+            </select>
         </label>
-        <select name="ReasonForContact" id="ReasonForContact">
-            <option value="hi">Saying Hi</option>
-            <option value="contractor">Looking for a Contractor</option>
-            <option value="interview">Interested in an Interview</option>
-        </select><br>
         <label>
                 Message:
             <input type="text" name="message">
-        </label><br>
+        </label>
         <button type="submit">Submit</button>
     </form>
 </body>

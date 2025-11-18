@@ -1,0 +1,121 @@
+/*Make sure you are using the Git repository and code from the last lab (mi349_blog).
+Create a new file in your repository called style.css (you may also have this already).
+Your new CSS file should be linked properly in the <head> of all HTML files in mi349_blog.
+Your CSS file should include at least 20 rule sets.
+Your CSS should include at least 1 type, class, ID, and attribute selector.
+Your CSS should apply consistently across all of your HTML files (e.g. all the paragraphs should look the same, headings, etc).
+Your CSS needs to modify both the basic layout of the page (backgrounds, margins, paddings) and typography.
+Add 3 of the 5 options to your site:
+A sticky sidebar or navigation header (using position: sticky)
+A Two column Flexbox layout
+//A Three column Flexbox layout with a large middle column and equal width side columns
+//A left or right floated image with a caption
+//A multi-column form layout using Flexbox
+All of your pages must use any global layouts you create (if you have a main content and sidebar layout, that should persist on each page).
+You should only have one CSS file used across all of you pages.
+Make sure you're referencing the class design principles when you're creating your design.
+Make sure you don't have any inline CSS or <br> tags in your markup.
+All of your HTML pages must validate.
+Your final website should be deployed to Netlify.*/
+body {
+    font-family:'Courier New', Courier, monospace;
+    margin: 10;
+}
+header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: rgb(123, 123, 123);
+}
+img.logo{
+    float:left;
+}
+h1{
+    text-align:center;
+    padding: 0.2em 0.4em;
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+}
+h5{
+    font-family:'Times New Roman', Times, serif;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-around;
+    background-color: darkgray;
+}
+a.navLink{
+    padding:1em;
+}
+p{
+    font-family:'Courier New', Courier, monospace;
+}
+article{
+    font-family:'Courier New', Courier, monospace;
+}
+aside{
+    float: right;
+    padding:0 1em;
+}
+aside.left{
+    float: left;
+}
+table{
+    background-color: black;
+    border: 1px solid black;
+}
+th{
+    background-color: darkgray;
+}
+tr{
+    background-color: lightgray;
+}
+td{
+    padding:0 0.3em;
+}
+form{
+    background-color: lightgray;
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+}
+label{
+    background-color: rgb(195, 195, 195);
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    margin:0.2%;
+}
+input{
+    background-color: rgb(171, 171, 171);
+}
+select{
+    background-color: rgb(171, 171, 171);
+}
+section.blog{
+    display:flex;
+    flex-direction: row;
+    background-color: lightgray;
+}
+section{
+    background-color: lightgray;
+}
+aside.list{
+    float:right;
+    align-content: center;
+}
+figure{
+    float:left;
+    align-content: center;
+    margin:2%;
+}
+section.about{
+    display: flex;
+}
+img{
+    padding:1%;
+}
