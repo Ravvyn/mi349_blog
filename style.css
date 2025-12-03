@@ -1,25 +1,18 @@
-/*Make sure you are using the Git repository and code from the last lab (mi349_blog).
-Create a new file in your repository called style.css (you may also have this already).
-Your new CSS file should be linked properly in the <head> of all HTML files in mi349_blog.
-Your CSS file should include at least 20 rule sets.
-Your CSS should include at least 1 type, class, ID, and attribute selector.
-Your CSS should apply consistently across all of your HTML files (e.g. all the paragraphs should look the same, headings, etc).
-Your CSS needs to modify both the basic layout of the page (backgrounds, margins, paddings) and typography.
-Add 3 of the 5 options to your site:
-A sticky sidebar or navigation header (using position: sticky)
-A Two column Flexbox layout
-//A Three column Flexbox layout with a large middle column and equal width side columns
-//A left or right floated image with a caption
-//A multi-column form layout using Flexbox
-All of your pages must use any global layouts you create (if you have a main content and sidebar layout, that should persist on each page).
-You should only have one CSS file used across all of you pages.
+/*
+Make sure you are using the Git repository and code from the last lab (mi349_blog).
+Add your responsive design rules to the bottom of your style.css (or main CSS document) file. Do not create a new CSS file for your responsive and @media rules.
+Using at least 
+2 @media queries and 
+10 rulesets, 
+modify your blog design to be more useable on small screen devices. Make sure images are using the width: 100% rule, text is readable, contrast ratios are in-check, and columns and layouts don't overflow on small screen dimensions.
 Make sure you're referencing the class design principles when you're creating your design.
 Make sure you don't have any inline CSS or <br> tags in your markup.
 All of your HTML pages must validate.
-Your final website should be deployed to Netlify.*/
+Your final website should be deployed to Netlify.
+*/
 body {
     font-family:'Courier New', Courier, monospace;
-    margin: 10;
+    background-color: rgb(123, 123, 123); 
 }
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -27,21 +20,29 @@ header{
     top:0;
     left:0;
     background-color: rgb(123, 123, 123);
+    margin:-10px;
+}
+div.header{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    gap:1em;
 }
 img.logo{
-    float:left;
-    max-width: 10%;
-    height: auto;
+    padding:0.5em;
+    margin:auto;
+    width: 100%;
 }
 h1{
+    margin:auto;
     text-align:center;
-    padding: 0.2em 0.4em;
 }
 h2{
     font-family:'Times New Roman', Times, serif;
+    margin-bottom: 0.2em;
 }
 h5{
     font-family:'Times New Roman', Times, serif;
+    margin: 0.2em;
 }
 nav{
     display: flex;
@@ -56,8 +57,13 @@ a.navLink{
 p{
     font-family:'Courier New', Courier, monospace;
 }
+p.article{
+    text-indent: 1em;
+}
 article{
     font-family:'Courier New', Courier, monospace;
+    width: 50%;
+    margin:5px;
 }
 aside{
     float: right;
@@ -69,6 +75,8 @@ aside.left{
 table{
     background-color: black;
     border: 1px solid black;
+    font-size: x-small;
+    width: 100%;
 }
 th{
     background-color: darkgray;
@@ -80,23 +88,29 @@ td{
     padding:0 0.3em;
 }
 form{
+    margin-top:2em;
     background-color: lightgray;
     display:flex;
     flex-flow:column;
     align-items: center;
+    padding:5px;
 }
 label{
     background-color: rgb(195, 195, 195);
     display:flex;
     width:100%;
     justify-content: space-between;
-    margin:0.2%;
+    margin:0.1em;
 }
 input{
     background-color: rgb(171, 171, 171);
 }
 select{
     background-color: rgb(171, 171, 171);
+}
+button{
+    margin: 0.5em;
+    width:96%;
 }
 section.blog{
     display:flex;
@@ -106,20 +120,63 @@ section.blog{
 section{
     background-color: lightgray;
 }
+section.about{
+    display: grid;
+    grid-template-columns: 1fr  2fr 1fr;
+    gap:2em
+}
 aside.list{
     float:right;
-    align-content: center;
+    width:100%;
 }
 figure{
     float:left;
-    align-content: center;
-    margin:2%;
+    margin:1em;
+    width: 100%;
 }
-section.about{
-    display: flex;
+p.about{
+    width:100%
 }
 img{
-    padding:1%;
     max-width: 100%;
     height: auto;
+}
+@media screen and (max-width: 600px) {
+    section.about{
+        grid-template-columns: 1fr 1fr;
+    }
+    p.article{
+        margin-top:0.5em;
+        text-indent:0em;
+        font-size: small;
+    }
+}
+@media  screen and (max-width:400px) {
+    form{
+        background-color: rgb(195, 195, 195);
+    }
+    label{
+        display:contents;
+    }
+    input{
+        width:50%;
+    }
+    select{
+        width:50%;
+    }
+    button{
+        margin-top:1em;
+        width:75%;
+    }
+    form.newsletter{
+        margin-top:0.5em;
+    }
+}
+@media screen and (max-width:300px){
+    div.header{
+        grid-template-columns: 1fr 4fr;
+    }
+    h1{
+        font-size: large;
+    }
 }
