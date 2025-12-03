@@ -1,15 +1,3 @@
-/*
-Make sure you are using the Git repository and code from the last lab (mi349_blog).
-Add your responsive design rules to the bottom of your style.css (or main CSS document) file. Do not create a new CSS file for your responsive and @media rules.
-Using at least 
-2 @media queries and 
-10 rulesets, 
-modify your blog design to be more useable on small screen devices. Make sure images are using the width: 100% rule, text is readable, contrast ratios are in-check, and columns and layouts don't overflow on small screen dimensions.
-Make sure you're referencing the class design principles when you're creating your design.
-Make sure you don't have any inline CSS or <br> tags in your markup.
-All of your HTML pages must validate.
-Your final website should be deployed to Netlify.
-*/
 body {
     font-family:'Courier New', Courier, monospace;
     background-color: rgb(123, 123, 123); 
@@ -31,6 +19,8 @@ img.logo{
     padding:0.5em;
     margin:auto;
     width: 100%;
+    height: auto;
+    max-width: 50px;
 }
 h1{
     margin:auto;
